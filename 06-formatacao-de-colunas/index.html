@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatação de Colunas</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <style>
+    .row {
+      height: 200px;
+      background-color: aliceblue;
+    }
+    .col-3 {
+      background-color: antiquewhite;
+      padding: 20px;
+      border: solid 1px black;
+    }
+  </style>
+</head>
+<body>
+  <p>É possível variar o ainhamento horizontal e vertical dos itens pelo pai ".row", usando align-items-center, justify-content-center e etc</p>
+  <p>Também é possível variar a posição de cada elemento individualmente usando o align-self-center, etc</p>
+  <p>É importante lembrar que todas essas classes também possuem modificadores de tamanhos de tela, como: align-items-xxl-center -> para telas grandes, o alinhamento é centralizado e nas menores não</p>
+  <h3>Classes adicionais:</h3>
+  <p>w-100 (e variações), determina o width de um elemento</p>
+  <p>order-last (e variações): determina a ordee que o elemento aparece</p>
+  <p>offset-1 (e variações) -> desloca uma coluna das 12 (ou mais, dep do número) como margem </p>
+  <p>ms-auto (e variações) -> cria uma margem automática (ou determinada) para a esquerda; ms vem de "margin start"</p>
+  <p>me-auto (e variações) -> similar ao ms, mas é para a direita; "marginend-auto"</p>
+  <p>mx-auto (e variações) -> é referente à margem no eixo x (tanto esquerda quanto direita) </p>
+
+  <h3>comportamento da col sem elemento pai:</h3>
+  <p>se ela não tiver um elemento pai como row, por exemplo, as divs seguem o padrão de ocupar sozinhas a linha toda, independente do tamanho do elemento</p>
+  <p>o número do col quem determina qual será o tamanho da div selecionada</p>
+  <div class="container">
+    <!-- <div class="row"> -->
+      <div class="col-3">div 1</div>
+      <div class="col-3 mx-auto">div 2</div>
+      <!-- <div class="col-3">div 3</div> -->
+    <!-- </div> -->
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .h400 {
+      height: 400px;
+    }
+
+    .h100 {
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>O sistema de gride divide a tela em 12 partes com características de flex box</p>
+  <p>É possível obter várias variações de layouts baseados nessa premissa, como por exemplo | 3/12 | 06/12 | 3/12 | e
+    etc</p>
+  <p>Essas partes são definidas nas classes através de números de colunas. Por exemplo: col-3 -> são 3 colunas de 12</p>
+  <p>Para dividir o espaço igualmente entre colunas, basta usar a classe "col" em todos os elementos ou em todos os elementos "restantes"</p>
+
+  <h1 class="text-center">Exemplo: </h1>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col bg-dark bg-opacity-50 h400"></div>
+      <div class="col-6 bg-dark bg-opacity-75 h400"></div>
+      <div class="col bg-dark bg-opacity-50 h400"></div>
+    </div>
+  </div>
+
+  <br>
+  <h1 class="text-center">Exemplo 2 - layout comum em páginas (somente desktop): </h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+      <div class="col-3 bg-dark bg-opacity-75 h400"></div>
+      <div class="col-9 bg-dark bg-opacity-25 h400"></div>
+      <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+    </div>
+  </div>
+
+  <br>
+  <h1 class="text-center">Exemplo 3 - layout comum em páginas responsivo: </h1>
+
+  <div class="container">
+    <div class="row"> <!-- o tipo de coluna  -->
+      <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+      <div class="col-12 col-md-3 bg-dark bg-opacity-75 h400"></div>
+      <div class="col-12 col-md-9 bg-dark bg-opacity-25 h400"></div>
+      <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+    </div>
+  </div>
+
+
+  <h1 class="text-center">Exemplo 4, várias linhas e colunas divididas com tamanhos iguais: </h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col bg-dark bg-opacity-50 h100"></div>
+      <div class="col bg-dark bg-opacity-75 h100"></div>
+      <div class="col bg-dark bg-opacity-50 h100"></div>
+      <div class="col bg-dark bg-opacity-75 h100"></div>
+      <div class="col bg-dark bg-opacity-50 h100"></div>
+    </div>
+
+    <div class="row">
+      <div class="col bg-dark bg-opacity-50 h100"></div>
+      <div class="col bg-dark bg-opacity-75 h100"></div>
+      <div class="col bg-dark bg-opacity-25 h100"></div>
+      <div class="col bg-dark bg-opacity-50 h100"></div>
+      <div class="col bg-dark bg-opacity-25 h100"></div>
+      <div class="col bg-dark bg-opacity-50 h100"></div>
+      <div class="col bg-dark bg-opacity-25 h100"></div>
+    </div>
+  </div>
+</body>
+
+</html>
