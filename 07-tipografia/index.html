@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Tipografia</title>
+</head>
+<body>
+  <div class="container">
+    <h1>h1 - Título de nível 1</h1>
+    <h2>h2 - Título de nível 2</h2>
+    <h3>h3 - Título de nível 3</h3>
+    <h4>h4 - Título de nível 4</h4>
+    <h5>h5 - Título de nível 5</h5>
+    <h6>h6 - Título de nível 6</h6>
+  </div>
+
+  <hr>
+  <p class="text-center"><- É possível usar os tamanhos dos títulos sem precisar usar os títulos em si, com a classe h(nível) -> h1, h2, h3... -></p>
+
+  <div class="container">
+    <p class="h1">.h1 - Classe de título nível 1</p>
+    <p class="h2">.h2 - Classe de título nível 2</p>
+    <p class="h3">.h3 - Classe de título nível 3</p>
+    <p class="h4">.h4 - Classe de título nível 4</p>
+    <p class="h5">.h5 - Classe de título nível 5</p>
+    <p class="h6">.h6 - Classe de título nível 6</p>
+  </div>
+
+  <hr>
+  <p class="text-center"><- Também dá para alterar o tamanho do próprio Título com o display-n -></p>
+
+  <div class="container">
+    <h1 class="display-1">h1 Display 1</h1>
+    <h1 class="display-2">h1 Display 2</h1>
+    <h1 class="display-3">h1 Display 3</h1>
+    <h1 class="display-4">h1 Display 4</h1>
+    <h1 class="display-5">h1 Display 5</h1>
+    <h1 class="display-6">h1 Display 6</h1>
+  </div>
+
+  <hr>
+  <h1 class="text-center">Parágrafos comuns - lead</h1>
+
+  <p class="text-center">Usando a classe lead, o parágrafo ganha uma aparência mais elegante</p>
+
+  <div class="container">
+    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores dolor ex perspiciatis aspernatur, eius quo temporibus, eligendi consequatur corporis dolores maiores cum, pariatur mollitia accusantium obcaecati quidem porro debitis deleniti!</p>
+  </div>
+
+  <hr>
+  <h1 class="text-center">tags de textos: </h1>
+
+  <div class="container">
+    <p>Texto em <mark>marcado</mark></p>
+    <p>Texto com aspecto de <del>excluído</del></p>
+    <p>Texto <s>riscado</s></p>
+    <p>Texto <ins>recém-inserido</ins></p>
+    <p>Texto <u>sublinhado</u></p>
+    <p>Texto <small>pequeno</small></p>
+    <p>Texto <strong>encorpado</strong></p>
+    <p>Texto <em>itálico</em></p>
+    <p>Texto abreviado <abbr title="Mongo, Express, React, Node">MERN</abbr></p>
+
+    <div class="container">
+      Texto de citação com blockquote
+      <br><br>
+      <figure class="text-end">
+        <blockquote class="blockquote" cite="Fulano de tal"> <!-- citações longas -->
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo consequuntur reprehenderit in, ipsam vel dignissimos rem iusto, dolorem placeat obcaecati a unde, praesentium sit? Doloribus voluptas fugiat hic voluptate doloremque!</p>
+        </blockquote>
+
+        <figcaption class="blockquote-footer ">
+          <cite>Fulano Famoso</cite>, diretor de cinema
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <hr>
+  <h1 class="text-center">Listas com bootstrap</h1>
+
+  <p class="text-center">Classe list-unstyled -> remove decoração das listas</p>
+
+  <div class="container">
+    <ul class="list-unstyled">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+      <li>Item 6</li>
+    </ul>
+
+    <hr>
+    <p>Listas inline - classe ul: list-inline; classe li: list-inline-item</p>
+
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+        <li class="list-inline-item">Item 4</li>
+        <li class="list-inline-item">Item 5</li>
+      </ul>
+    </div>
+
+    <hr>
+    <p>Lista com definições - dl - definition list</p>
+
+    <dl>
+      <dt>Termo 1</dt>
+      <dd>Descrição do termo 1</dd>
+      <dt>Termo 2</dt>
+      <dd>Descrição do termo 2</dd>
+      <dt>Termo 3</dt>
+      <dd>Descrição do termo 3</dd>
+      <dt>Termo 4</dt>
+      <dd>Descrição do termo 4</dd>
+      <dt>Termo 5</dt>
+      <dd>Descrição do termo 5</dd>
+    </dl>
+  </div>
+
+  <div style="height: 200px;"></div>
+</body>
+</html>

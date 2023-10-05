@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Imagens e Figuras</title>
+</head>
+<body>
+  <p>Com a classe img-fluid, a imagem se ajusta ao tamanho do elemento pai</p>
+  <p>Já com o img-thmbnail, a imagem ganha bordas e arredondamento e segue o tamanho do elemento pai igualmente</p>
+  <p>Para manipular as bordas, usamos o rounded</p>
+  <div class="container align-items-center">
+    <img src="retangulo.jpg" class="img-fluid">
+    <img src="quadrado.jpg" alt="" class="img-fluid w-25 mt-2 rounded-circle">
+  </div>
+
+  <hr>
+
+  <p>Propriedade float pode ser usada com o float-opcao</p>
+  <p>Posso adicionar margem na imagem com o me-numero, que seria margin end</p>
+  <div class="container">
+    <img src="quadrado.jpg" alt="" class="w-25 float-start me-3">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestias harum nostrum atque dolorem ratione exercitationem, praesentium consequuntur, laborum deserunt amet eveniet laboriosam eius temporibus? Sint ipsum doloremque est adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolores ducimus nihil amet sequi. Ab perspiciatis asperiores laudantium eum, suscipit sapiente, ipsam quae nostrum reiciendis exercitationem ducimus minima quisquam mollitia!</p>
+  </div>
+
+  <hr>
+
+  <p>Centralizar a imagem na página: </p>
+  <p>Posso usar o text-center no elemento pai para isso</p>
+  <div class="container text-center">
+    <img src="quadrado.jpg" alt="" class="w-25">
+  </div>
+
+
+  <hr>
+  <p>Figcaption</p>
+
+  <div class="container text-center">
+    <figure class="figure">
+      <img src="quadrado.jpg" alt="" class="img-fluid w-25">
+      <figcaption class="figcaption text-center">Legenda da figura</figcaption>
+    </figure>
+  </div>
+  <div class="m-5 p-5"></div>
+</body>
+</html>
