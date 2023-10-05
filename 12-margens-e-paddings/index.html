@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margens e Paddings</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+  <p class="m-4">Usamos as notações m-numero para representar as 4 margens < ^ v >, onde m-0 é 0rem, 1 é 0.25rem, 2 é 0.5rem, 3 é 1rem, 4 é 1.5rem e 5 é 3rem</p>
+  <p class="p-4">Também é possível utilizar os paddings través das notações p-numero, com tamanhjos similares às margens m-numero</p>
+  <p>Para definir margens e paddings para a esquerda, utilizamos ms-n ou ps-n (s de start)</p>
+  <p>Para a direita, usamos o e: me-n && pe-n (e de end)</p>
+  <p>Para o topo, usamos o t: mt-n && pt-n (t de top)</p>
+  <p>Para o fundo, usamos o b: mb-n && pb-n (b de bottom)</p>
+  <p>Para o eixo x (esquerda e direita), usamos o mx-n e px-n</p>
+  <p>Para o eixo y (cima e baixo), usamos o my-n e py-n</p>
+  <p>Para margens ou paddings automáticos: m-auto, p-auto, mx-auto... etc</p>
+  <p>Todas essas variações, possuem as adequações para responsividade, como mx-sm-5, etc</p>
+  <hr>
+
+  <div class="container">
+    <p class="text-bg-dark me-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sit, commodi hic cumque fugiat culpa esse unde dolorum recusandae numquam.</p>
+    <p class="text-bg-dark m-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem molestias soluta beatae nobis harum fugiat cumque dicta perferendis enim numquam!</p>
+    <p class="text-bg-dark mx-sm-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus quas tempora fugit corrupti eveniet odio dicta animi, earum mollitia?</p>
+  </div>
+
+  <hr>
+  <p class="text-center">ex 2</p>
+  <hr>
+
+  <div class="container bg-secondary">
+    <div class="bg-primary col-4 p-5 mx-auto"></div>
+  </div>
+
+</body>
+</html>

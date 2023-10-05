@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cores e Opacidade</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <h1 class="text-center">Existem 8 possíveis cores</h1>
+  <p>Em algumas situações, mais que 8. Porém, são: primary, secondary, success, danger, warning, info, dark, light</p>
+  <p>Para usar um background, usamos bg-identificacaoDaCor. Ex: bg-danger</p>
+  <p>Para o bg, também há o bg-white e bg-transparent</p>
+  <p>Para usar gradiente, anotamos a classe bg-gradient</p>
+  <p>Para alterar a opacidade, usamos o bg-opacity-numero, ex: bg-opacity-50. Há as opções: 10, 25, 50, 75 e 100</p>
+  <p>É possível manipular as cores do texto também, com a classe text-cor. Ex: text-white. O texto tem as 8 cores padrões e também o white e o text-muted (cinza)</p>
+  <p>Assim como o bg, o texto também possui a classe opacity como text-opacity-numero</p>
+  <p>
+    É possível também usar um texto com bg selecionado automaticamente para melhor contraste. com o
+    text-bg-corSelecionada. Ex: text-bg-dark -> a cor fica branca com fundo preto. (fundo preto, então texto branco para melhor contraste)
+  </p>
+  <p>Assim como text e bg, os links também possuem cores, com a classe link-nomeDaCor. Como: link-primary</p>
+
+  <hr>
+
+  <div class="container" style="background-color: #eee; border-radius: 10px; padding: 10px 20px;">
+    <h1>Cores e Opacidade</h1>
+    <p class="bg-primary bg-gradient">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-secondary bg-gradient">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-success bg-gradient">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-danger">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-warning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-dark bg-opacity-100 text-white text-opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="text-bg-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p class="bg-transparent text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi amet impedit, repellat aliquid vitae possimus nulla? Soluta assumenda officia voluptatem?</p>
+    <p><a href="#" class="link-danger">Link danger</a></p>
+  </div>
+
+  <div class="m-5 p-5"></div>
+</body>
+</html>

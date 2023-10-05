@@ -1,10 +1,10 @@
 # Sufixos de cores no bootstrap
 
 * primary -> azul
-* decondary -> cinza
+* secondary -> cinza
 * success -> verde
 * danger -> vermelho claro
 * warning -> amarelo
 * info -> azul claro
-* dark -> fundo preto e cor branca
 * light -> fundo claro e fonte preta
+* dark -> fundo preto e cor branca
