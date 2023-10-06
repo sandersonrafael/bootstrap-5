@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Bordas, arredondamentos e Sombras</title>
+</head>
+<body class="p-3">
+  <h1>Utilizando bordas</h1>
+  <p>Para adicionar bordas ao elemento, utilizamos a classe border</p>
+  <p>Para adicionar cores, utilizamos border-tipoDaCor. Ex: border-dark</p>
+  <p>Para definir o tamanho, usamos o border-numeroDoTamanho</p>
+  <p>Para controlar a opacidade da borda, utilizamos o border-opacity-numero. Ex: border-opacity-75</p>
+  <p>É possível usar bordar para determinadas direções: border-(start | end | top | bottom)</p>
+  <p>Além disto, podemos usar tamanhos específicos, como border-start-5 ou border-5 border-start (as duas maneiras resultam no mesmo)</p>
+  <p>No bootstrap 5, não é possível adicionar tamanhos específicos com responsividade para as bordas (variando com o tamanho da tela)</p>
+
+  <hr>
+
+  <h1>Arredondamentos</h1>
+  <p>Usamos o rounded e suas variações... rounded-top, rounded-start, rounded-5, etc</p>
+  <p>Para um elevado arredondamento, usamos o rounded-pill</p>
+  <p>Para um máximo arredondamento, usamos o rounded-circle</p>
+
+  <hr>
+
+  <h1>Sombra</h1>
+  <p>padrão: shadow-none -> sem sombras</p>
+  <p>shadow-sm -> sombra quase imperceptível | shadow -> sombra média | shadow-lg -> sombra maior</p>
+
+  <hr>
+
+  <div class="container p-5">
+    <div class="
+      col-4 mx-auto p-5 bg-success
+      border-start border-end border-dark
+      border-5 border-opacity-75
+      shadow-lg rounded-pill
+    "></div>
+
+  </div>
+</body>
+</html>
