@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Select, range e botões</title>
+</head>
+<body class="pb-5 mb-5">
+
+  <h1>Select</h1>
+  <p>form-select -> dá o estilo do bootstrap ao select de um formulário. Essa classe faz com que ocupe 100% do espaço disponível</p>
+  <p>Para delimitar o espaço, podemos englobar o select em uma div com col-n</p>
+  <p>Para variar o tamanho, há o form-select-sm e o form-select-lg</p>
+  <p>Usando o atributo <strong>multiple</strong>, o select fica automaticamente aberto e com barra de rolagem. O atributo <strong>size="n"</strong> define quantas linhas ficarão expostas</p>
+  <p>Além disso, dá para usar o atributo de disabled</p>
+  <hr>
+  <h1>Input range</h1>
+  <p>classe form-range, e é necessário definir um min, max, step e value (padrão)</p>
+  <hr>
+
+  <h1>Botões</h1>
+  <p>As mesmas estilizações dos botões podem ser usados para links</p>
+  <p>Utilizamos a classe btn para indicar que representa um botão e btn-tipoDeCor para definir a cor. Ex: class="btn btn-success"</p>
+  <p>Para botões secundários, por exemplo, há a classe btn-outline-tipoDaCor -> botão branco com borda colorida e quando passa o mouse, fica colorido</p>
+  <p>Para modificar o tamanho, temos o btn-lg e o btn-sm</p>
+
+
+  <hr>
+
+
+
+  <div class="container p-5">
+    <div class="mb-3">
+      <label for="" class="form-label">Opção Desejada</label>
+      <div class="col-4">
+        <select name="" id="" class="form-select form-select-sm" multiple size="6">
+        <option value="">Opção 1</option>
+        <option value="">Opção 2</option>
+        <option value="">Opção 3</option>
+        <option value="">Opção 4</option>
+        <option value="">Opção 5</option>
+        <option value="">Opção 6</option>
+      </select>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="mb-3">
+      <label for="faixa" class="form-label">Etapa</label>
+      <input type="range" class="form-range" id="faixa" min="1" max="5" step="1" value="4">
+    </div>
+
+    <hr>
+
+    <a href="#" class="btn btn-primary btn-lg">Link 1</a>
+    <a href="#" class="btn btn-outline-danger btn-sm">Link 2</a>
+
+    <hr>
+
+    <button class="btn btn-warning" disabled>Botão disabled</button>
+    <button class="btn btn-primary" data-bs-toggle="button">Botão toggle</button>
+  </div>
+
+</body>
+</html>

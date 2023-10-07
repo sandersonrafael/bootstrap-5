@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Campos de checagem</title>
+</head>
+<body>
+
+  <h1>Campos de checagem padrões</h1>
+  <p>São representados pelos checkbox e o radio</p>
+  <p>O elemento pai do checkbox precisa da classe form-check e o elemento checkbox precisa da classe form-check-input</p>
+  <p>Para os elemnetos ficarem lado a lado, utilizamos a classe form-check-inline no elemento pai</p>
+  <p>Para alinhas os checkbox à direita, utilizamos o form-check-reverse no elemento pai</p>
+  <hr>
+
+  <h3>checkbox switch</h3>
+  <p>utiliza-se a classe form-switch no elemento pai do input checkbox</p>
+
+  <hr>
+
+  <h3>checkbox do tipo botão</h3>
+  <p>Para usar um botão como checkbox (que fica ativado ou desativado), usamos a classe:</p>
+  <p>btn-check no input checkbox e btn btn-outline-tipoDeCor</p>
+  <h3>Isso também se aplica a inputs do tipo radio</h3>
+
+  <hr>
+
+  <div class="container p-5">
+    <div class="mb-3 form-check">
+      <input type="checkbox" id="novo" class="form-check-input">
+      <label for="novo" class="form-label">Produto novo</label>
+    </div>
+
+    <hr>
+
+    <div class="mb-3 form-check form-check-reverse">
+      <input type="radio" name="radio" id="novo-1" value="n" class="form-check-input">
+      <label for="novo-1" class="form-label">Produto novo</label>
+    </div>
+
+    <div class="mb-3 form-check form-check-reverse">
+      <input type="radio" name="radio" id="novo-2" value="u" class="form-check-input">
+      <label for="novo-2" class="form-label">Produto usado</label>
+    </div>
+
+    <hr>
+
+    <div class="mb-3 form-check form-switch">
+      <input type="checkbox" id="novo" class="form-check-input">
+      <label for="novo" class="form-label">Produto novo</label>
+    </div>
+
+    <hr>
+
+    <div class="mb-3">
+      <input type="checkbox" id="entrega-rapida" class="btn-check">
+      <label for="entrega-rapida" class="btn btn-outline-dark">Entrega rápida</label>
+    </div>
+
+    <hr>
+
+    <div class="mb-3">
+      <input type="radio" name="entrega" id="entrega-1" value="entrega-1" class="btn-check">
+      <label for="entrega-1" class="btn btn-outline-dark">Entrega rápida</label>
+    </div>
+
+    <div class="mb-3">
+      <input type="radio" name="entrega" id="entrega-2" value="entrega-2" class="btn-check">
+      <label for="entrega-2" class="btn btn-outline-dark">Entrega lenta</label>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Complementos de Campos</title>
+</head>
+<body>
+
+  <h1>Agrupamento</h1>
+  <p>Usando a classe input-group no elemento pai, define que todos itens dentro dele serão unificados (farão parte de um mesmo grupo)</p>
+
+  <hr>
+
+  <div class="container p-5">
+    <div class="mb-3 input-group">
+      <label for="texto" class="input-group-text">Nome Completo</label>
+      <input type="text" id="texto" class="form-control">
+    </div>
+
+    <div class="mb-3 input-group">
+      <label for="dinheiro" class="input-group-text">R$</label>
+      <input type="text" id="dinheiro" class="form-control text-end">
+      <label for="dinheiro" class="input-group-text">,00</label>
+    </div>
+
+    <div class="mb-3 input-group">
+      <input type="text" id="email" class="form-control text-end">
+      <label class="input-group-text">@</label>
+      <input type="text" id="email" class="form-control">
+    </div>
+
+    <div class="mb-3 input-group">
+      <label class="input-group-text">Mensagem</label>
+      <textarea type="text" id="email" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3 input-group">
+      <input type="search" class="form-control">
+      <button class="btn btn-outline-secondary">Buscar</button>
+    </div>
+
+  </div>
+</body>
+</html>
