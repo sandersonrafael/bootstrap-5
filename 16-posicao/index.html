@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Posicionamento</title>
+</head>
+<body>
+  <div class="p-5 invisible"></div>
+  <h1>Classes de posição</h1>
+
+  <p>fixed-top ou bottom -> fixado no topo ou fundo da página</p>
+  <p>Para compensar o espaço da div que está fixada no topo, podemos botar uma div atrás dela com o mesmo tamanho, porém com a classe invisible, então o conteúdo vai ser mostrado corretamente abaixo da div que está fixada no topo. Essa estratégia pode ser usada no fundo da página também</p>
+  <p>Elemento com posição "sticky", usamos as classes sticky-top e sticky-bottom, que também podem ser usdas juntamente</p>
+  <p></p>
+
+  <hr>
+
+  <div class="p-5 bg-primary fixed-top"></div>
+  <p class="lead p-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum exercitationem voluptates officia cumque maxime. Enim similique molestias sed ducimus in, dolorum possimus a rem obcaecati quas quibusdam pariatur sequi!
+  </p>
+
+  <div class="p-5 bg-dark fixed-bottom"></div>
+
+  <hr>
+
+  <h1>Stacks (pilhas)</h1>
+  <p>O vstack (vertical stack) num elemento pai, faz com que o gap possa ser usado e elementos sejam empilhados como um flex row</p>
+  <p>Já o hstack (horizontal stack), faz com que funcione como um flex direction column e parecido com inline block</p>
+  <p>É possível também utilizar uma barra vertical, similar ao hr do html, mas como uma classe vr</p>
+
+  <hr>
+
+  <div class="container my-3 hstack gap-5">
+    <div class="p-5 bg-primary"></div>
+    <div class="vr"></div>
+    <div class="p-5 bg-success"></div>
+    <div class="p-5 bg-warning"></div>
+  </div>
+
+  <hr>
+  <h1>Demais classes de posicionamento</h1>
+  <p>position-(absolute | fixed | relative | static | sticky)</p>
+
+  <hr>
+  <div class="p-5 invisible"></div>
+</body>
+</html>

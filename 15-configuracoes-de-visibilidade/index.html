@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações de Visibilidade</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <style>
+    div.border {
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Propriedade display</h1>
+  <p>d-block -> display do tipo bloco, sem elementos ao lado</p>
+  <p>d-inline -> display do tipo em linha, sem width e height</p>
+  <p>d-inline-block -> elemento do tipo bloco em linha, com propriedade width e height </p>
+  <p>d-none -> o elemento existe na estrutura da página, mas não é exibido.</p>
+  <p><strong>Importate</strong> -> para não exibir em telas maiores, usamos o d-sm-none, d-md-none, etc. Já para não exibir em telas menores, usamos: d-none d-md-block, etc</p>
+  <p>Há também o d-grid, d-flex, d-line-flex e as suas variações com tamanhos de tela, d-sm-flex, por ex</p>
+
+  <hr>
+
+  <div class="p-5 bg-danger"></div>
+  <div class="p-4 col-3 d-none d-lg-block m-3 bg-primary"></div>
+  <div class="p-4 col-3 d-inline-block d-lg-none m-3 bg-success"></div>
+  <div class="p-4 col-3 d-inline-block m-3 bg-warning"></div>
+
+  <hr>
+  <h1>Exemplo</h1>
+  <p>Para que ao tentar imprimir, o elemento não seja parte da impressão, utilizamos o d-print-none</p>
+  <p>Para que o elemento só seja mostrado caso usuário tente imprimir e não no uso normal do site: d-none d-print-block</p>
+  <hr>
+
+  <header class="p-3 text-bg-dark d-print-none">
+    <div class="container">
+      <h1 class="display-1">Cabeçalho</h1>
+    </div>
+  </header>
+
+  <article class="container my-3">
+    <h1 class="mb-4">Título do Artigo</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad non necessitatibus iste voluptatum voluptas rem aperiam fugiat aliquam corporis! Accusantium, adipisci. A architecto reprehenderit ex delectus at! Sed, vel.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad non necessitatibus iste voluptatum voluptas rem aperiam fugiat aliquam corporis! Accusantium, adipisci. A architecto reprehenderit ex delectus at! Sed, vel.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad non necessitatibus iste voluptatum voluptas rem aperiam fugiat aliquam corporis! Accusantium, adipisci. A architecto reprehenderit ex delectus at! Sed, vel.</p>
+    <p>Fonte: meusite.com.br</p>
+  </article>
+
+  <hr>
+  <h1>Outro exemplo</h1>
+  <p>Classe invisble -> elemento não é mostrado, mas ocupa espaço na página</p>
+
+  <hr>
+
+  <div class="p-4 col-3 m-3 bg-primary"></div>
+  <div class="p-4 col-3 m-3 bg-success invisible"></div>
+  <div class="p-4 col-3 m-3 bg-warning"></div>
+
+  <hr>
+  <h1>Transbordo de conteúdo (<strong>overflow</strong>)</h1>
+  <p>overflow-hidden -> esconde o conteúdo que transborda</p>
+  <p>overflow-auto -> quando há transbordo de conteúdo, abre barra de rolagem</p>
+  <p>overflow-visible -> comportamento padrão, que mostra caso passe</p>
+  <p>overflow-scroll -> sempre com barras visíveis</p>
+  <hr>
+
+  <div class="container bg-info mt-3">
+    <div class="row">
+      <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi delectus accusamus dignissimos corporis doloribus reprehenderit! Iure ducimus, maxime quo in autem minima similique animi a. Minima quo distinctio blanditiis!</div>
+      <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi delectus accusamus dignissimos corporis doloribus reprehenderit! Iure ducimus, maxime quo in autem minima similique animi a. Minima quo distinctio blanditiis!</div>
+      <div class="border p-2 col-3 overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi delectus accusamus dignissimos corporis doloribus reprehenderit! Iure ducimus, maxime quo in autem minima similique animi a. Minima quo distinctio blanditiis!</div>
+      <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi delectus accusamus dignissimos corporis doloribus reprehenderit! Iure ducimus, maxime quo in autem minima similique animi a. Minima quo distinctio blanditiis!</div>
+    </div>
+  </div>
+
+  <div class="p-5 m-5"></div>
+</body>
+</html>

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
-<body>
+<body class="p-2">
   <h2>Alinhamento</h2>
   <p>Usamos os text-posicaoDoAlinhamento. Como text-start -> alinhamento à esquerda</p>
   <p>Também se aplicam os modificadores de responsividade, como text-sm-center</p>
@@ -27,12 +27,45 @@
 
   <h2>Tamanhos de fontes</h2>
   <p>Usamos as variações do fs-numero, onde fs-1 é a maior e fs-6 a menor</p>
-
-
   <hr>
+
 
   <div class="container">
     <p class="text-center fs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis iusto quos voluptatum, facere voluptatibus iure ipsam maiores nisi quod vero aliquid facilis quas consequatur beatae nam temporibus rem laudantium!</p>
   </div>
+  <hr>
+
+  <h2>Peso e estilo das fontes</h2>
+  <p>Pesos de fontes -> temos as classes: fw-bold, fw-semibold, fw-normal, fw-light</p>
+  <p>Estilos -> temos as classes: fst-italic, fst-normal</p>
+
+  <hr>
+
+  <div class="container">
+    <p class="fw-bold">Texto com peso Negrito</p>
+    <p class="fw-semibold">Texto com peso Semi-negrito</p>
+    <p class="fw-normal">Texto com peso Normal</p>
+    <p class="fw-light">Texto com peso Leve</p>
+    <p class="fst-italic">Texto com peso Leve</p>
+    <p class="fst-normal">Texto com peso Leve</p>
+  </div>
+
+  <hr>
+  <h2>Altura da linha de texto</h2>
+  <p>Utilizamos as variações de lh-(1 | base | lg | sm) para modificar a altura da linha, que representam respectivamente: altura mínima, altura normal, altura longa e altura "dupla" das linhas</p>
+  <p>Fontes com todas letras monoespaçadas: font-monospace</p>
+  <h2>link</h2>
+  <p>Para links (a), podemos usar a classe text-reset -> o link assume as características da fonte do elemento pai</p>
+  <p>Para remover o sublinhado, usamos a classe text-decoration-none</p>
+  <p>Para o texto com aspecto riscado -> text-decoration-line-throug</p>
+  <p>Caso deseje explicitar o sublinhado, usamos o text-decoration-underline</p>
+  <p>Além disso, é possível truncar o texto, mostrando apenas uma linha e reticências, com o text-truncate</p>
+
+  <hr>
+  <div class="container">
+    <p class="lh-lg font-monospace text-decoration-line-through text-truncate">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A saepe sequi velit quia deserunt! Nobis quia repellat natus! Illum ratione natus fugit unde cupiditate inventore perferendis amet placeat saepe ut? <a href="" class="text-decoration-none">Link Qualquer</a></p>
+  </div>
+
+  <div class="p-5 m-5"></div>
 </body>
 </html>

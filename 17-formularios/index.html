@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Formulários</title>
+</head>
+<body class="p-3">
+
+  <h1>Classes form</h1>
+  <p>As classes são em geral: form-tipoDoElemento</p>
+  <p>Para o input, a classe é form-control</p>
+  <p>Para textos informativos a classe é a form-text</p>
+  <p>A div que contém o checkbox quem usa a classe form-check, os demais relacionados ao check são: input-check-algumacoisa</p>
+  <p>Para mudar o visual do botão, usamos a classe btn e btn-cor</p>
+  <p>Para desabilitar um campo, a classe disabled é usada</p>
+  <p>readonly permite copiar e colar o texto dentro do input, diferente do disabled que não permite</p>
+  <p>Tamanho -> para variar o tamanho do campo, podemos usar o form-control-lg ou sm</p>
+  <p>form-control-paintext -> o valor do campo fica como um texto comum</p>
+  <p>input:file -> utilizamos o form-control também para dar aparência do bootstrap</p>
+  <p>input:color -> igualmente input-control</p>
+
+  <div class="container p-5">
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" id="email" class="form-control form-control-plaintext" placeholder="Digite seu e-mail">
+        <div class="form-text">Nunca compartilharemos seu e-mail</div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" id="password" class="form-control">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" id="lembrar" class="form-check-input">
+        <label for="lembrar" class="form-check-label">Lembrar de mim</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <hr>
+
+    <input type="file" id="arquivo" class="form-control">
+    <input type="color" id="cor" class="form-control">
+
+    <hr>
+
+    <h1>datalist dá possibilidade de sugestões automáticas sem obrigatoridade de o usuário utilizar</h1>
+    <div class="mb-3">
+      <label for="" class="form-label">Cidade</label>
+      <input type="text" class="form-control" list="cidades" placeholder="Digite para buscar...">
+      <datalist id="cidades">
+        <option value="Cidade 1"></option>
+        <option value="Cidade 2"></option>
+        <option value="Cidade 3"></option>
+        <option value="Cidade 4"></option>
+        <option value="Cidade 5"></option>
+        <option value="Cidade 6"></option>
+      </datalist>
+    </div>
+
+  </div>
+
+  <div class="m-5 p-5"></div>
+</body>
+</html>
