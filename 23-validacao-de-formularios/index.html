@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Validação de Formulários</title>
+</head>
+
+<body class="p-2">
+
+  <h1>Exemplo de formulário</h1>
+  <p>Atributo required torna o campo com preenchimento obrigatório</p>
+  <p>Para definir o padrão de um input, é possível usar o atributo patter="[0-9]{8}" -> são somente números, e até 8
+    números</p>
+  <hr>
+
+  <h1>Validação bootstrap</h1>
+  <p>Para validar através das funcionalidades do próprio bootstrap, é necessário adiiconar a classe:
+    <strong>needs-validation</strong> no elemento form</p>
+  <p>Também é necessário desativar a validação automática do navegador, adicionando o atributo
+    <strong>novalidade</strong> no elemento form</p>
+  <p>Buscar na página de form > validation na documentação do Bootstrap 5 e copiar o código JavaScript para validar</p>
+  <p>Abrir tag script no final da página e usar o script do doc</p>
+  <p>Para <strong>mensagens de erro</strong>, usamos uma div abaixo do input, com a classe <strong>invalid-feedback</strong></p>
+  <p>Para mensagem de sucesso, usamos a classe <strong>valid-feedback</strong> em uma div</p>
+  <p><strong>is-valid</strong> e <strong>is-invalid</strong> são as duas classes que dão a aparência de validação positiva ou negativa no item de formulário</p>
+  <p>Se a validação for feita de forma manual pelo desenvolvedor, basta adicionar ou remover uma dessas classes para dar retorno ao usuário</p>
+  <p>Como numa validação do lado do servidor, por exemplo</p>
+
+  <hr>
+
+
+  <div class="container p-5 mb-5">
+    <h1 class="display-3 mt-5">Endereço</h1>
+    <hr>
+    <form method="POST" novalidate class="needs-validation">
+      <div class="row mb-3 g-2">
+        <div class="col-7">
+          <label for="logradouro" class="form-label">Logradouro</label>
+          <input type="text" class="form-control" id="logradouro" required>
+          <div class="invalid-feedback">Você deve informar o logradouro</div>
+          <div class="valid-feedback">Logradouro informado corretamente</div>
+        </div>
+
+        <div class="col-2">
+          <label for="numero" class="form-label">Numero</label>
+          <input type="text" class="form-control" id="numero">
+        </div>
+
+        <div class="col-3">
+          <label for="complemento" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="complemento">
+        </div>
+
+        <div class="col-6">
+          <label for="bairro" class="form-label">Bairro</label>
+          <input type="text" class="form-control is-invalid" id="bairro">
+        </div>
+
+        <div class="col-6">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidade">
+        </div>
+
+        <div class="col-6">
+          <label for="estado" class="form-label">Estado</label>
+          <input type="text" class="form-control" id="estado">
+        </div>
+
+        <div class="col-3">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" required pattern="[0-9]{8}" placeholder="12345678">
+        </div>
+        <div class="form-check-inline">
+          <input type="checkbox" id="aceite" class="form-check-input">
+          <label for="aceite" class="form-check-label">Aceito os termos e condições</label>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Salvar endereço</button>
+    </form>
+  </div>
+
+  <script>
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+
+</html>
