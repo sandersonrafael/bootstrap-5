@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="./codigo-js.js" defer></script>
+  <title>Mensagens Flutuantes</title>
+</head>
+<body>
+
+  <h1>Toast (aviso)</h1>
+  <p>Necessário haver uma div com a classe <strong>toast</strong>, que para ser exibida, deve ser adicionado dinamicamente a classe <strong>show</strong> (com javascript). Para fechar, remover a classe <strong>show</strong> e adicionar a classe <strong>hide</strong></p>
+  <p>O corpo do toast pode conter toast-header e toast-body, além de um botão btn-close com atributo data-bs-dismiss="toast"</p>
+
+  <hr>
+
+  <div class="container my-5">
+    <div class="toast">
+      <div class="toast-header">
+        <i class="bi-info-circle me-1"></i>
+        <strong class="me-auto">Informação</strong>
+        <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, recusandae?
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
