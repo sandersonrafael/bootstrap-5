@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Barras de Navegação</title>
+</head>
+<body>
+
+  <!-- Para definir que será usado um navbar, utilizamos o elemento nav com a classe navbar -->
+  <!-- Cada item dentro do navbar precisa ter uma classe navbar-algumacoisa para assumir determinadas propriedades -->
+  <!-- Para adicionar textos simples, utilizamos o elemento com a classe navbar-text e definimos suas margens / paddings -->
+  <!-- Para adicionar menu expasível, utilizamos uma div com a classe collapse navbar collapse e dentro dela seus links com a classe navbar-link -->
+  <!-- Para determinar o tamanho de tela que o menu vai ser expandido, usamos a classe navbar-expand-tamanhoDaTela no elemento nav -->
+  <!-- Para indicar que o item de menu está ativo, utilizamos a classe active no link correspondente -->
+  <!-- Para indicar que está desabilitado, pode ser utilizada a classe disabled -->
+
+  <!-- Menu dropdown -> Para adicionar, é necessário duas coisas: -->
+  <!--
+    um botão tipo button com a classe navbar-toggler, propriedade data-bs-toggle="collapse" e
+    propriedade data-bs-target="idDoMenuDropdown"
+  -->
+  <!-- Uma div com as classes collapse navbar-collapse e o id="idReferenciadoPeloDataBsTarget" -->
+
+  <!-- Item de menu com submenus -->
+  <!-- O link (item de menu) precisa estar dentro de uma div da classe dropdown -->
+  <!-- O link (item de menu), precisa ter a classe dropdown-toggle e atributo data-bs-toggle="dropdown" -->
+  <!-- Ao lado do link com submenus, criamos um elemento ul com a classe dropdown-menu -->
+  <!-- Preenchemos com li's, com um link (a) dentro, possuindo a classe dropdown-item  -->
+
+  <!-- Cores da navbar -->
+  <!-- Para definir a cor da navbar, utilizamos a classe bg-identificacaoDaCor -->
+  <!-- Para definir a cor do texto do navbar como branca, utilizamos navbar-dark como classe -->
+
+  <!-- Espaçamentos -->
+  <!-- Para que os itens fiquem à esquerda, é necessário adicionar a classe ms-auto no primeiro item de menu -->
+  <!-- Para o menu com submenus não fique para fora da tela usamos a classe dropdown-menu-end no ul que contém os links de submenu -->
+  <!-- Para aumentar a altura da navbar, podemos utilizar o py-numero, adicionando padding -->
+  <!-- Para fixar o navbar no topo, utilizamos a classe sticky-top (preferencial) ou fixed-top no elemento nav -->
+
+  <!-- <div class="pt-5 mt-5"></div> -->
+  <nav class="navbar bg-dark navbar-dark navbar-expand-sm py-3 sticky-top">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <i class="bi-bootstrap-fill fs-1 me-2"></i>
+        Bootstrap 5
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNavbar">
+        <div class="navbar-nav ms-auto">
+          <a href="#" class="nav-link active">Principal</a>
+          <div class="dropdown dropdown-menu-end">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a href="#" class="dropdown-item">Casa</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Decoração</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Cozinha</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Limpeza</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Cosméticos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <form action="" class="d-flex">
+        <div class="input-group">
+          <input type="search" class="form-control" placeholder="Buscar...">
+          <button type="submit" class="btn btn-dark">Buscar</button>
+        </div>
+      </form> -->
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem id tempore. Iste asperiores, ipsum exercitationem voluptate perspiciatis accusantium inventore cupiditate placeat nam amet. Dicta fugit itaque eum incidunt distinctio obcaecati consequuntur voluptates culpa nostrum nihil ad quam, aliquid quos excepturi commodi sunt? Quibusdam repellendus, dignissimos labore necessitatibus beatae optio quos aliquid temporibus voluptate veniam quisquam mollitia obcaecati maiores consequatur. Voluptatibus odio labore, consequatur vero voluptatem blanditiis exercitationem aliquam animi laborum consequuntur amet corporis dolor. Facilis excepturi nostrum corporis maxime quia soluta, laudantium cumque minus consequuntur tenetur veritatis veniam consectetur consequatur voluptate perferendis fugit dolor cum expedita amet quis perspiciatis?
+    </p>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem id tempore. Iste asperiores, ipsum exercitationem voluptate perspiciatis accusantium inventore cupiditate placeat nam amet. Dicta fugit itaque eum incidunt distinctio obcaecati consequuntur voluptates culpa nostrum nihil ad quam, aliquid quos excepturi commodi sunt? Quibusdam repellendus, dignissimos labore necessitatibus beatae optio quos aliquid temporibus voluptate veniam quisquam mollitia obcaecati maiores consequatur. Voluptatibus odio labore, consequatur vero voluptatem blanditiis exercitationem aliquam animi laborum consequuntur amet corporis dolor. Facilis excepturi nostrum corporis maxime quia soluta, laudantium cumque minus consequuntur tenetur veritatis veniam consectetur consequatur voluptate perferendis fugit dolor cum expedita amet quis perspiciatis?
+    </p>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem id tempore. Iste asperiores, ipsum exercitationem voluptate perspiciatis accusantium inventore cupiditate placeat nam amet. Dicta fugit itaque eum incidunt distinctio obcaecati consequuntur voluptates culpa nostrum nihil ad quam, aliquid quos excepturi commodi sunt? Quibusdam repellendus, dignissimos labore necessitatibus beatae optio quos aliquid temporibus voluptate veniam quisquam mollitia obcaecati maiores consequatur. Voluptatibus odio labore, consequatur vero voluptatem blanditiis exercitationem aliquam animi laborum consequuntur amet corporis dolor. Facilis excepturi nostrum corporis maxime quia soluta, laudantium cumque minus consequuntur tenetur veritatis veniam consectetur consequatur voluptate perferendis fugit dolor cum expedita amet quis perspiciatis?
+    </p>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem id tempore. Iste asperiores, ipsum exercitationem voluptate perspiciatis accusantium inventore cupiditate placeat nam amet. Dicta fugit itaque eum incidunt distinctio obcaecati consequuntur voluptates culpa nostrum nihil ad quam, aliquid quos excepturi commodi sunt? Quibusdam repellendus, dignissimos labore necessitatibus beatae optio quos aliquid temporibus voluptate veniam quisquam mollitia obcaecati maiores consequatur. Voluptatibus odio labore, consequatur vero voluptatem blanditiis exercitationem aliquam animi laborum consequuntur amet corporis dolor. Facilis excepturi nostrum corporis maxime quia soluta, laudantium cumque minus consequuntur tenetur veritatis veniam consectetur consequatur voluptate perferendis fugit dolor cum expedita amet quis perspiciatis?
+    </p>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem id tempore. Iste asperiores, ipsum exercitationem voluptate perspiciatis accusantium inventore cupiditate placeat nam amet. Dicta fugit itaque eum incidunt distinctio obcaecati consequuntur voluptates culpa nostrum nihil ad quam, aliquid quos excepturi commodi sunt? Quibusdam repellendus, dignissimos labore necessitatibus beatae optio quos aliquid temporibus voluptate veniam quisquam mollitia obcaecati maiores consequatur. Voluptatibus odio labore, consequatur vero voluptatem blanditiis exercitationem aliquam animi laborum consequuntur amet corporis dolor. Facilis excepturi nostrum corporis maxime quia soluta, laudantium cumque minus consequuntur tenetur veritatis veniam consectetur consequatur voluptate perferendis fugit dolor cum expedita amet quis perspiciatis?
+    </p>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem id tempore. Iste asperiores, ipsum exercitationem voluptate perspiciatis accusantium inventore cupiditate placeat nam amet. Dicta fugit itaque eum incidunt distinctio obcaecati consequuntur voluptates culpa nostrum nihil ad quam, aliquid quos excepturi commodi sunt? Quibusdam repellendus, dignissimos labore necessitatibus beatae optio quos aliquid temporibus voluptate veniam quisquam mollitia obcaecati maiores consequatur. Voluptatibus odio labore, consequatur vero voluptatem blanditiis exercitationem aliquam animi laborum consequuntur amet corporis dolor. Facilis excepturi nostrum corporis maxime quia soluta, laudantium cumque minus consequuntur tenetur veritatis veniam consectetur consequatur voluptate perferendis fugit dolor cum expedita amet quis perspiciatis?
+    </p>
+  </div>
+
+  <footer class="p-2 bg-dark text-light text-center sticky-bottom">
+    Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
