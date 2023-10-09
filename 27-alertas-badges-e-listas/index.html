@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>Alertas, Badges e Listas</title>
+</head>
+<body>
+
+  <h1>Alertas</h1>
+  <p>Para adicionar alertas, utilizamos a classe <strong>alert alert-tipoDaCor</strong></p>
+  <p>Para adicionar links ao alert, a classe <strong>link-alert</strong> deve ser utilizada numa tag do tipo link</p>
+  <p>Para adicionar título -> <strong>alert-heading</strong></p>
+  <p>
+    Adicionar botão para fechar o alerta -> <strong>alert-dismissible</strong> na classe pai do alerta;
+    Adicionar um botão com a classe <strong>btn-close</strong> e atributo <strong>data-bs-dismiss="alert"</strong>;
+    Para adicionar suavidade ao fechar o alerta: adicionar as classes <strong>fade show</strong> na div pai do alerta
+  </p>
+
+  <hr>
+
+  <div class="container py-5">
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      <h4 class="alert-heading"><i class="bi-info-circle"></i> Informação</h4>
+      <p>Este é um alerta simples.</p>
+      <a href="#" class="alert-link">clique aqui</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <h1>Badges (texto em capsula)</h1>
+  <p>Utilizar a classe <strong>badge bg-corDesejada</strong> para criar um texto em formato de capsula</p>
+
+  <hr>
+
+  <div class="container py-5">
+    <h2>Exemplo de texto em capsula <span class="badge bg-secondary">novo</span></h2>
+
+    <h2>Exemplo de uso:</h2>
+
+    <button class="btn btn-primary btn-lg position-relative">Notificações
+      <span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">5</span>
+    </button>
+
+    <button class="btn btn-primary btn-lg position-relative ms-4">Notificações
+      <span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded-circle p-2 border border-light"> </span>
+    </button>
+  </div>
+
+  <hr>
+
+  <h1>Lista agrupadas (ou lista de agrupamentos)</h1>
+  <p>Criar uma div com a classe <strong>list-group</strong></p>
+  <p>Os elementos filhos (li) devem conter a classe <strong>list-group-item</strong></p>
+  <p>Para deixar com aparência destacada, utilizar a classe <strong>active</strong></p>
+  <p>Para destaque "negativo", utilisar <strong>disabled</strong></p>
+  <p>Para links clicáveis, utilizar itens com tag >a> e com classes <strong>list-group-item list-group-item-action</strong></p>
+  <p>Para botões clicáveis, utilizar itens com tag >button> e com classes <strong>list-group-item list-group-item-action</strong></p>
+  <p>Para retirar as bordas ao redor, podemos utilizar a classe <strong>list-group-flush</strong> na classe pai do list-group</p>
+  <p>Para list-groups numerados, utilizamos na div pai as classes <strong>list-group list-group-numbered</strong></p>
+
+
+  <hr>
+
+  <div class="container py-5">
+    <div class="list-group">
+      <li class="list-group-item active">Item 1</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+      <li class="list-group-item disabled">Item 4</li>
+      <li class="list-group-item">Item 5</li>
+    </div>
+
+    <hr>
+
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Link 1</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 2</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 3</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 4</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 5</a>
+    </div>
+
+    <hr>
+
+    <div class="list-group list-group-flush">
+      <button href="#" class="list-group-item list-group-item-action btn-personal-class">Botão 1</button>
+      <button href="#" class="list-group-item list-group-item-action btn-personal-class">Botão 2</button>
+      <button href="#" class="list-group-item list-group-item-action btn-personal-class">Botão 3</button>
+      <button href="#" class="list-group-item list-group-item-action btn-personal-class">Botão 4</button>
+      <button href="#" class="list-group-item list-group-item-action btn-personal-class">Botão 5</button>
+    </div>
+
+    <hr>
+
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">Item 1</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+      <li class="list-group-item">Item 4</li>
+      <li class="list-group-item">Item 5</li>
+    </ol>
+
+    <hr>
+
+    <h1>Exemplo de lista de notícias</h1>
+    <hr>
+
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título da Notícia</h5>
+          <small>5 dias atrás</small>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vel tempora esse. Voluptate ab aut quisquam quod neque magnam, aperiam dolores repudiandae ducimus nostrum, velit consequatur, necessitatibus ipsa harum sapiente.</p>
+        <small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, quis.</small>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título da Notícia</h5>
+          <small>5 dias atrás</small>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vel tempora esse. Voluptate ab aut quisquam quod neque magnam, aperiam dolores repudiandae ducimus nostrum, velit consequatur, necessitatibus ipsa harum sapiente.</p>
+        <small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, quis.</small>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título da Notícia</h5>
+          <small>5 dias atrás</small>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vel tempora esse. Voluptate ab aut quisquam quod neque magnam, aperiam dolores repudiandae ducimus nostrum, velit consequatur, necessitatibus ipsa harum sapiente.</p>
+        <small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, quis.</small>
+      </a>
+
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título da Notícia</h5>
+          <small>5 dias atrás</small>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vel tempora esse. Voluptate ab aut quisquam quod neque magnam, aperiam dolores repudiandae ducimus nostrum, velit consequatur, necessitatibus ipsa harum sapiente.</p>
+        <small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, quis.</small>
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+    document.querySelectorAll(".btn-personal-class").forEach((button) => {
+      button.addEventListener("click", (e) => {
+        Array.from(e.target.classList).includes("active")
+          ? e.target.classList.remove("active")
+          : e.target.classList.add("active");
+      })
+    })
+  </script>
+</body>
+</html>
