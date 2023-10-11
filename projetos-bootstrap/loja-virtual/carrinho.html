@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+    <title>Quitanda Online | Carrinho de Compras</title>
+</head>
+
+<body style="min-width: 372px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+        <div class="container">
+            <a href="/" class="navbar-brand"><strong>Quitanda Online</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link text-white">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contato.html" class="nav-link text-white">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="align-self-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/cadastro.html" class="nav-link text-white">Quero me Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/login.html" class="nav-link text-white">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/carrinho.html" class="nav-link text-white">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="./bi.svg#cart3" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <h1>Carrinho de Compras</h1>
+
+            <hr>
+
+            <ul class="list-group mb-3">
+                <li class="list-group-item py-3">
+                    <div class="row g-3">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <a href="#">
+                                <img src="/img/produtos/000008.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                            <h4>
+                                <b>
+                                    <a href="#" class="text-decoration-none text-danger">Abacate Manteiga</a>
+                                </b>
+                            </h4>
+                            <small>Abacate manteiga da melhor qualidade. Bastante fresco!</small>
+                        </div>
+                        <div
+                            class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-down" />
+                                    </svg>
+                                </button>
+                                <input type="text" value="4" class="form-control text-center border-dark">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-up" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm border-dark">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#trash" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="text-right mt-2">
+                                <small class="text-secondary">Valor kg: R$ 3,99</small>
+                                <br>
+                                <span class="text-dark">Valor Item: R$ 7,98</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item py-3">
+                    <div class="row g-3">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <a href="#">
+                                <img src="/img/produtos/000002.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                            <h4>
+                                <b>
+                                    <a href="#" class="text-decoration-none text-danger">Abacate Manteiga</a>
+                                </b>
+                            </h4>
+                            <small>Abacate manteiga da melhor qualidade. Bastante fresco!</small>
+                        </div>
+                        <div
+                            class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-down" />
+                                    </svg>
+                                </button>
+                                <input type="text" value="4" class="form-control text-center border-dark">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-up" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm border-dark">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#trash" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="text-right mt-2">
+                                <small class="text-secondary">Valor kg: R$ 3,99</small>
+                                <br>
+                                <span class="text-dark">Valor Item: R$ 7,98</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item py-3">
+                    <div class="row g-3">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <a href="#">
+                                <img src="/img/produtos/000007.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                            <h4>
+                                <b>
+                                    <a href="#" class="text-decoration-none text-danger">Abacate Manteiga</a>
+                                </b>
+                            </h4>
+                            <small>Abacate manteiga da melhor qualidade. Bastante fresco!</small>
+                        </div>
+                        <div
+                            class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-down" />
+                                    </svg>
+                                </button>
+                                <input type="text" value="4" class="form-control text-center border-dark">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-up" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm border-dark">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#trash" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="text-right mt-2">
+                                <small class="text-secondary">Valor kg: R$ 3,99</small>
+                                <br>
+                                <span class="text-dark">Valor Item: R$ 7,98</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item py-3">
+                    <div class="row g-3">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <a href="#">
+                                <img src="/img/produtos/000009.jpg" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                            <h4>
+                                <b>
+                                    <a href="#" class="text-decoration-none text-danger">Abacate Manteiga</a>
+                                </b>
+                            </h4>
+                            <small>Abacate manteiga da melhor qualidade. Bastante fresco!</small>
+                        </div>
+                        <div
+                            class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-down" />
+                                    </svg>
+                                </button>
+                                <input type="text" value="4" class="form-control text-center border-dark">
+                                <button type="button" class="btn btn-outline-dark btn-sm">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#caret-up" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm border-dark">
+                                    <svg class="bi" width="16" height="16" fill="currentColor">
+                                        <use xlink:href="bi.svg#trash" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="text-right mt-2">
+                                <small class="text-secondary">Valor kg: R$ 3,99</small>
+                                <br>
+                                <span class="text-dark">Valor Item: R$ 7,98</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item py-3">
+                    <div class="text-end">
+                        <h4 class="text-dark mb-3">Valor Total: R$ 7,98</h4>
+                        <a href="/index.html" class="btn btn-outline-success btn-lg">Continuar Comprando</a>
+                        <button class="btn btn-danger btn-lg">Fechar Compra</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="border-top text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    &copy; 2023 - <a href="#" class="text-decoration-none text-dark">Quitanda Online</a>
+                    <br>
+                    Rua Virtualândia, 1165, Bairro Xyz, Ficticiliana/FC
+                    <br>
+                    CNPJ 00.000.000/0001-01
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
+                    <br>
+                    <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a>
+                    <br>
+                    <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a>
+                    <br>
+                    <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <a href="/contato.html" class="text-decoration-none text-dark">Contato Pelo Site</a>
+                    <br>
+                    <a href="mailto:email@emaildecontato.com"
+                        class="text-decoration-none text-dark">email@emaildecontato.com</a>
+                    <br>
+                    <a href="phone:99999999999" class="text-decoration-none text-dark">(99) 99999-9999</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
